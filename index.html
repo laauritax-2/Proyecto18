@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configura los caracteres de la página. -->
+    <meta charset="UTF-8">
+    <!-- Adapta la página a celulares y computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de repositorios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Agrupa y centra el contenido. -->
+    <main class="contenedor">
+        <!-- Muestra el título principal. -->
+        <h1>Repositorio aleatorio</h1>
+        <!-- Explica qué hace la página. -->
+        <p>Selecciona un lenguaje para encontrar un repositorio de GitHub.</p>
+
+        <!-- Identifica el menú de lenguajes. -->
+        <label for="lenguaje">Lenguaje:</label>
+        <!-- Permite elegir el lenguaje de búsqueda. -->
+        <select id="lenguaje">
+            <!-- Opción inicial del menú. -->
+            <option value="">Selecciona uno</option>
+            <!-- Permite buscar proyectos JavaScript. -->
+            <option value="javascript">JavaScript</option>
+            <!-- Permite buscar proyectos Python. -->
+            <option value="python">Python</option>
+            <!-- Permite buscar proyectos Java. -->
+            <option value="java">Java</option>
+        </select>
+
+        <!-- Inicia la búsqueda al hacer clic. -->
+        <button id="buscar">Buscar repositorio</button>
+
+        <!-- Muestra los mensajes y resultados. -->
+        <section id="resultado">
+            <!-- Mensaje que aparece al abrir la página. -->
+            <p>El resultado aparecerá aquí.</p>
+        </section>
+    </main>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>

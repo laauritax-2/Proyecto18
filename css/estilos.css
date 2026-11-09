@@ -1,0 +1,113 @@
+/* Configura el tamaño de los elementos. */
+* {
+    box-sizing: border-box; /* Incluye bordes y relleno en el tamaño. */
+}
+
+/* Centra el contenido sobre el fondo azul oscuro. */
+body {
+    margin: 0; /* Quita el margen del navegador. */
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla. */
+    display: flex; /* Activa la distribución flexible. */
+    justify-content: center; /* Centra horizontalmente. */
+    align-items: center; /* Centra verticalmente. */
+    padding: 15px; /* Deja espacio en los bordes. */
+    background: #071a33; /* Aplica el fondo azul oscuro. */
+    color: #eaf3ff; /* Define el color del texto. */
+    font-family: Arial, sans-serif; /* Usa una letra sencilla. */
+}
+
+/* Da forma a la caja principal. */
+.contenedor {
+    width: 100%; /* Se adapta al ancho disponible. */
+    max-width: 390px; /* Evita que el buscador sea muy grande. */
+    padding: 24px; /* Separa el contenido del borde. */
+    text-align: center; /* Centra los textos. */
+    background: #102b50; /* Aplica azul a la caja. */
+    border: 1px solid #24558a; /* Dibuja un borde azul. */
+    border-radius: 12px; /* Redondea las esquinas. */
+}
+
+/* Da estilo al título. */
+h1 {
+    margin: 0 0 10px; /* Separa el título del párrafo. */
+    color: #8fc5ff; /* Resalta el título en azul claro. */
+    font-size: 23px; /* Define el tamaño del título. */
+}
+
+/* Estiliza el texto de explicación. */
+p {
+    color: #c3dafa; /* Usa un azul claro. */
+    font-size: 13px; /* Mantiene el texto compacto. */
+    line-height: 1.5; /* Mejora la lectura. */
+}
+
+/* Coloca la etiqueta encima del menú. */
+label {
+    display: block; /* Ocupa una línea completa. */
+    margin: 18px 0 7px; /* Separa la etiqueta del menú. */
+    text-align: left; /* Alinea la etiqueta a la izquierda. */
+    font-size: 13px; /* Ajusta el tamaño de la etiqueta. */
+}
+
+/* Estiliza el menú de selección. */
+select {
+    width: 100%; /* Ocupa el ancho de la caja. */
+    padding: 10px; /* Da espacio al texto. */
+    border: 1px solid #3979b9; /* Dibuja un borde azul. */
+    border-radius: 7px; /* Redondea el menú. */
+    background: #0b2140; /* Aplica un fondo azul oscuro. */
+    color: white; /* Hace visible el texto. */
+}
+
+/* Da estilo al botón de búsqueda. */
+button {
+    width: 100%; /* Ocupa todo el ancho disponible. */
+    margin-top: 12px; /* Lo separa del menú. */
+    padding: 11px; /* Aumenta el área del botón. */
+    border: 0; /* Quita el borde predeterminado. */
+    border-radius: 7px; /* Redondea las esquinas. */
+    background: #2878c7; /* Aplica azul al botón. */
+    color: white; /* Define el texto blanco. */
+    font-weight: bold; /* Resalta el texto. */
+    cursor: pointer; /* Indica que se puede pulsar. */
+}
+
+/* Cambia el azul cuando se pasa el cursor. */
+button:hover {
+    background: #3b91e5; /* Aclara el botón. */
+}
+
+/* Diseña el espacio de los resultados. */
+#resultado {
+    margin-top: 16px; /* Separa el resultado del botón. */
+    padding: 14px; /* Deja espacio interior. */
+    border-radius: 8px; /* Redondea las esquinas. */
+    background: #0b2140; /* Usa un azul más oscuro. */
+    text-align: left; /* Alinea los datos a la izquierda. */
+    overflow-wrap: anywhere; /* Ajusta textos largos. */
+}
+
+/* Resalta el nombre del repositorio. */
+#resultado h2 {
+    margin-top: 0; /* Quita el espacio superior. */
+    color: #8fc5ff; /* Usa azul claro. */
+    font-size: 17px; /* Ajusta el tamaño del nombre. */
+}
+
+/* Da color al enlace de GitHub. */
+#resultado a {
+    color: #70b7ff; /* Resalta el enlace en azul. */
+}
+
+/* Ajusta el tamaño de las estadísticas. */
+.datos {
+    color: #d5e8ff; /* Usa texto azul claro. */
+    font-size: 13px; /* Mantiene los datos compactos. */
+}
+
+/* Adapta la caja a pantallas pequeñas. */
+@media (max-width: 420px) {
+    .contenedor {
+        padding: 18px; /* Reduce el espacio interior. */
+    }
+}
